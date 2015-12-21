@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Java Web Starter Application</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<h1>JAVA Memcached app for <span class="blue">Quote of the Day</span></h1>
+		<p>
+			Quotes expire in cache in 10 seconds
+		</p>
+		<table style='width: 70%;border:1px;'>
+			<tr>
+				<td><h3 id = "qod">To Err is Human</h3></td>
+				<td>
+					<a href="#" onclick="getQuote()"><img class = "newappIcon" src='images/refresh.png'   style="width:75px;"/></a>
+				</td>
+				<td>
+					<p id="refreshedat"></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="quote" placeholder="Provide quote" value="To Err is Human"/>
+				</td>
+				<td>
+					<a href="#" onclick="postQuote()"><img class = "newappIcon" src='images/Go-Button.png'   style="width:75px;"/></a>
+				</td>
+				<td>
+					<p id="setat"></p>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+</html>
